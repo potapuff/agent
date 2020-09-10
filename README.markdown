@@ -1,7 +1,7 @@
 # Monitor
 
 Linux monitoring agent fro course Techical Solution Support / Software Quality Assurance, Sumy Stete University, fall 2020.
-Рighly base on **Graphy**.
+Highly base on **Graphy**.
 
 
 ## Installation
@@ -15,7 +15,7 @@ or
 
 First, upload lasted version of gem grom github
 
-    wget http://github.com/....
+    wget github.com/potapuff/agent/...
  
 Then install the gem on your server:
 
