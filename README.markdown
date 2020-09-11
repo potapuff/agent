@@ -7,23 +7,25 @@ Highly base on **Graphy**.
 ## Installation
 Pre-requisit: you need ruby
 
-    apt install ruby
+    apt install ruby ruby-dev gcc libffi-dev make
    
 or
 
-    yum install ruby   
+    yum install ruby ruby-dev gcc libffi-dev make  
 
 First, upload lasted version of gem grom github
 
-    wget github.com/potapuff/agent/...
+    wget https://github.com/potapuff/agent/releases/download/0.1.X/agent-0.1.X.gem
  
 Then install the gem on your server:
 
-    gem install agent-version.gem
+    gem install agent-0.1.X.gem
+    
 
 Then run the `init` command to initialize the required directories and files:
 
-    sudo nonitor init    # or rvmsudo if you use rvm
+    sudo agent init    # or rvmsudo if you use rvm
+    agent update       # or rvmsudo if you use rvm
 
 This will create a directory for storing config and data files at `/var/lib/agent`.
 You need to run this command through sudo, because a standard user probably doesn't have
@@ -38,7 +40,7 @@ The `init` command will create a sample config file for you at `/var/lib/agent/a
 
 If for some reason you want to stop the monitoring, call:
 
-    agent remove    # or: graphy disable
+    agent remove    # or: agent disable
 
 This will remove the crontab line (and leave all your data in place).
 
